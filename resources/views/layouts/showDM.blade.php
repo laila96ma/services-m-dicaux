@@ -17,8 +17,8 @@
                     <p class="text-gray-700 text-lg">nombre de jours de repos : {{ $dossierMedicaux->nbr_repos  }}</p>
                    
                     @if ($patient)
-                    <p class="text-gray-700 text-lg">nom de patient: {{ $patient->matricule }}</p>
-                    <p class="text-gray-700 text-lg">prenom de patient : {{ $patient->nom }}</p>
+                    <p class="text-gray-700 text-lg">matricule de patient: {{ $patient->matricule }}</p>
+                    <p class="text-gray-700 text-lg">nom de patient : {{ $patient->nom }}</p>
                     <p class="text-gray-700 text-lg">poste de patient: {{ $patient->poste }}</p>
                     <p class="text-gray-700 text-lg">service de patient: {{ $patient->service }}</p>
                     <p class="text-gray-700 text-lg">motif de patient: {{ $patient->motif }}</p>

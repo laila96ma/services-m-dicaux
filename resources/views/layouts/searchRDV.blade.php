@@ -26,7 +26,7 @@
                                 <div class="overflow-x-auto">
                             <table class="table-auto w-full">
                                 <thead>
-                                    <tr >
+                                    <tr class="bg-gray-700  text-white text-sm">
                                        <th class="px-1 py-2">numéro de patient</th>
                                         <th class="px-1 py-2">date de rendez-vous</th>
                                         <th class="px-1 py-2">type de rendez-vous</th>

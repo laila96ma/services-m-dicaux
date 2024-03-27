@@ -4,7 +4,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+          
         }
         .card {
             background-color: #ffffff;
@@ -62,6 +62,12 @@
         }
         .form-button:hover {
             background-color: #1e40af;
+        }
+        @media screen and (max-width: 768px) {
+            .login-container {
+                margin-top: 60px; 
+            }
+            
         }
     </style>
     <div class="login-container">

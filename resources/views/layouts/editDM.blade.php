@@ -87,7 +87,7 @@
 
 
         <div class="flex items-center justify-center mt-4">
-          <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Modifier</button>
+          <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">modifier</button>
         </div>
       </form>
 

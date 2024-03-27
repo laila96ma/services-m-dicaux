@@ -21,6 +21,7 @@
                                     <th class="px-4 py-2">matricule</th>
                                     <th class="px-4 py-2">nom</th>
                                     <th class="px-4 py-2">Heure de rendez-vous</th>
+                                    <th class="px-4 py-2">action</th>
                                 </tr>
                             </thead>
                             <tbody>

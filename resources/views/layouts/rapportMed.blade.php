@@ -10,7 +10,7 @@
                         <h3 class="liste text-lime-700 font-bold">liste des rapports médicaux</h3>
                         <div class="text-green-500 text-lg mb-4 ">
                         
-                        <form action="{{url('search-record')}}" method="POST">
+                        <form action="{{url('searchRM')}}" method="POST">
                             {!! csrf_field() !!}
                             <input type="text" name="matricule">
                             <input type="submit" value="search">

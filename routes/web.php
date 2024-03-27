@@ -42,7 +42,7 @@ Route::resource('/dossierMedicaux', dossierMedicalController::class);
 Route::resource('/RDV', RdvController::class);
 Route::resource('/salleAttente', SalleAttenteController::class);
 Route::get('/rapportMed',[RapportMedController::class,'index']);
-Route::post('search-record', [RapportMedController::class,'search']);
+Route::post('searchRM', [RapportMedController::class,'search']);
 Route::get('/downloadRM/{matricule}', [RapportMedController::class,'download'])->name('downloadRM');
 Route::get('/showRMed/{matricule}', [RapportMedController::class,'show']);
 

@@ -11,9 +11,9 @@
 <body class="bg-gray-100">
  
     @if (Route::has('login'))
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:px-6 sm:py-4 sm:flex sm:justify-between sm:items-center">
             @auth
-                <a href="{{ url('/patient') }}" class="text-sm text-gray-700 dark:text-gray-500 w-36 ">home</a>
+                <a href="{{ url('/patient') }}" class="text-sm text-gray-700 dark:text-gray-500 w-36 sm:right-14 ">home</a>
             @else
             <button type="submit" class=" bg-lime-600 hover:bg-lime-800 w-28">
                 <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500  text-decoration-none ">login</a>
@@ -21,7 +21,7 @@
                 
                 @if (Route::has('register'))
                 <button type="submit" class=" bg-lime-600 hover:bg-lime-800 w-28">
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">register</a>
+                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 sm:right-72 ">register</a>
                 </button>
                     @endif
             @endauth

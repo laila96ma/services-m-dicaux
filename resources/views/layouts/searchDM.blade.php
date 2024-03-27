@@ -26,7 +26,7 @@
                         <div class="overflow-x-auto">
                             <table class="table-auto w-full">
                                 <thead>
-                                    <tr >
+                                    <tr class="bg-gray-700  text-white text-sm">
                                        
                                         <th class="px-2 py-2"> antécédents médicaux</th>
                                         <th class="px-2 py-2">allergies </th>

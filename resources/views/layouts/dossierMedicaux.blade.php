@@ -31,17 +31,17 @@
                                 <thead>
                                     <tr class="bg-gray-700  text-white text-sm">
                                        
-                                        <th class="px-2 py-2"> antécédents médicaux</th>
-                                        <th class="px-2 py-2">allergies </th>
-                                        <th class="px-2 py-2">maladie </th>
-                                        <th class="px-2 py-2">médicament</th>
-                                        <th class="px-2 py-2">analyse</th>
-                                        <th class="px-2 py-2">nombre de repos</th>
-                                        <th class="px-2 py-2">matricule</th>
-                                        <th class="px-2 py-2">nom</th>
-                                        <th class="px-2 py-2">poste</th>
-                                        <th class="px-2 py-2">service</th>
-                                        <th class="px-2 py-2">Actions</th>
+                                        <th class="px-1 py-1"> antécédents médicaux</th>
+                                        <th class="px-1 py-1">allergies </th>
+                                        <th class="px-1 py-1">maladie </th>
+                                        <th class="px-1 py-1">médicament</th>
+                                        <th class="px-1 py-1">analyse</th>
+                                        <th class="px-1 py-1">nombre de repos</th>
+                                        <th class="px-1 py-1">matricule</th>
+                                        <th class="px-1 py-1">nom</th>
+                                        <th class="px-1 py-1">poste</th>
+                                        <th class="px-1 py-1">service</th>
+                                        <th class="px-1 py-1">Actions</th>
                                         
                                     </tr>
                                 </thead>
@@ -49,24 +49,24 @@
                                 @foreach($dossierMedicaux as $item)
                                     <tr>
                                         
-                                        <td class="border px-2 py-2">{{ $item->antécédents_médicaux }}</td>
-                                        <td class="border px-2 py-2">{{ $item->allergies }}</td>
-                                        <td class="border px-2 py-2">{{ $item->maladie }}</td>
-                                        <td class="border px-2 py-2">{{ $item->médicament }}</td>
-                                        <td class="border px-2 py-2">{{ $item->analyse }}</td>
-                                        <td class="border px-2 py-2">{{ $item->nbr_repos }}</td>
+                                        <td class="border px-1 py-1">{{ $item->antécédents_médicaux }}</td>
+                                        <td class="border px-1 py-1">{{ $item->allergies }}</td>
+                                        <td class="border px-1 py-1">{{ $item->maladie }}</td>
+                                        <td class="border px-1 py-1">{{ $item->médicament }}</td>
+                                        <td class="border px-1 py-1">{{ $item->analyse }}</td>
+                                        <td class="border px-1 py-1">{{ $item->nbr_repos }}</td>
                                         
                                         @if ($item->patient)
-                                            <td class="border px-2 py-2">{{ $item->patient->matricule }}</td>
-                                            <td class="border px-2 py-2">{{ $item->patient->nom }}</td>
-                                            <td class="border px-2 py-2">{{ $item->patient->poste }}</td>
-                                            <td class="border px-2 py-2">{{ $item->patient->service }}</td>
+                                            <td class="border px-1 py-1">{{ $item->patient->matricule }}</td>
+                                            <td class="border px-1 py-1">{{ $item->patient->nom }}</td>
+                                            <td class="border px-1 py-1">{{ $item->patient->poste }}</td>
+                                            <td class="border px-1 py-1">{{ $item->patient->service }}</td>
                                            
                                     @else
                                         <td colspan="3">Aucune patient associée à cette dossier  médicale.</td>
                                     @endif
  
-                                    <td class="border px-4 py-2">
+                                    <td class="border px-1 py-2">
                                         <a href="{{ url('/dossierMedicaux/' . $item->id) }}" title="View dossierMedicaux" class="text-green-600 hover:text-green-900">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
